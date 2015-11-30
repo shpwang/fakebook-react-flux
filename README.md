@@ -4,3 +4,6 @@
  1. npm install  
  2. node server   
  3. npm start - for gulp
+ 
+
+參考:https://github.com/coodoo/react-meetup-1
