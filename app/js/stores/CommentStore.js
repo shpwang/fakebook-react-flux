@@ -32,7 +32,10 @@ var searchFilter = '';
 
 // app 第一次啟動時，存入一包 mock data 到 localStorage 供測試
 var db = window.localStorage;
-
+if( db.hasOwnProperty('mydb') == false ){
+    // console.log( '\n無歷史資料，存入 mock data' );
+    db.setItem('mydb', JSON.stringify({comments: [], selectedItem: null}) )
+}
 
 // 接著一律從 db 讀取歷史資料
 var o = JSON.parse(db.getItem('mydb'));
