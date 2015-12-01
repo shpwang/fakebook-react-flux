@@ -27,7 +27,7 @@ module.exports = keyMirror({
   	
   	COMMENT_CREATE: null,
     COMMENT_LIKE: null,
-
+    COMMENT_REMOVE: null,
   	noop: null
 });
 
